@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	$_SESSION["user"] = "kungen";
+	$_SESSION["password"] = "anssi";
+	
+	$user = $_SESSION["user"];
+	$password = $_SESSION["password"];
+?>
 <!doctype html>
 <html>
 <head>
@@ -9,23 +17,14 @@
 
 	<form>
   Käyttäjätunnus:<br>
-  <input type="text" name="username" method="GET"><br>
+  <input type="text" action"" name="kayttaja" method="post"><br>
   Salasana:<br>
-  <input type="text" name="password" method="GET"><br>
-  <?php salaus() ?><input type="submit" value="Kirjaudu" ></a>
+  <input type="text" action"" name="salasana" method="post"><br>
+  <input type="submit" value="Kirjaudu" >
 </form>
 
 <?php
-	function salaus() {
-	if($_GET["username"] == "kungen" || $_GET["password"] == "anssi") {
-		$linkki = '<a href="randomizer.php">';
-		echo $linkki;
-		}	else {
-			$linkki = '<a href="#">';
-			echo $linkki;
-			}
-	}
-
+	
 ?>
 
 </body>
