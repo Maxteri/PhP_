@@ -17,9 +17,9 @@
 
 	<form>
   Käyttäjätunnus:<br>
-  <input type="text" action"" name="kayttaja" method="post"><br>
+  <input type="text" action"kirjautuminen.php" name="kayttaja" method="post"><br>
   Salasana:<br>
-  <input type="text" action"" name="salasana" method="post"><br>
+  <input type="text" action"kirjautuminen.php" name="salasana" method="post"><br>
   <input type="submit" value="Kirjaudu" >
 </form>
 
